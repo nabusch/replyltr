@@ -45,10 +45,10 @@
 \RequirePackage{natbib}
 \def\@mb@citenamelist{cite,citep,citet,citealp,citealt}
 
-\RequirePackage{multibib}
-\newcites{revone}{References}
+%\RequirePackage{multibib}
+%\newcites{revone}{References}
 
-\RequirePackage{bibentry} % We need this to suppress the main bibliography with nobibliography, but still use citation command sin the main text.
+\RequirePackage{bibentry} % We need this to suppress the main bibliography with nobibliography, but still use citation commands in the main text.
 
 % -------------------------------------------------------------
 % Todo Notes

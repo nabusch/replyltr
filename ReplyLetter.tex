@@ -1,5 +1,14 @@
 \documentclass[10pt]{replyltr}
 
+% catchfilebetweentags can "import" text pieces from an external document, i.e. the main manuscript. We need xr to import the correct references and counters from the .aux file of the main manuscript file.
+\usepackage{catchfilebetweentags} 
+\usepackage{xr}
+
+\externaldocument{manuscript}
+\newcommand{\loadRevision}[1]{
+	\ExecuteMetaData[manuscript.tex]{#1}
+}
+
 
 \begin{document}
 
@@ -14,6 +23,18 @@ This is a great idea. The revised results are most awesome:
 The test was significant, indicating an awesome effect.	
 }
 
+% ------------------------------------------------------
+% Import the revised text from the main manuscript file.
+
+\reviewer
+Your Introduction should be better.
+
+\reply
+We revised the Introduction as follows:
+
+\revision{
+\loadRevision{tag}
+}
 	
 \nobibliography{Bibliography}
 \bibliographystyle{apalike}
