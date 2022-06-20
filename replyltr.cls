@@ -72,6 +72,7 @@
 % -------------------------------------------------------------
 % New environments
 % -------------------------------------------------------------
+\newcommand{\editor}{\subsection{\noindent\textbf{Editor: }}}
 \newcommand{\reviewer}{\subsection{\noindent\textbf{Reviewer: }}}
 \newcommand{\reply}{\textbf{Reply: }}
 \newcommand{\revision}[1]{\textit{#1}}
