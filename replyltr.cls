@@ -59,7 +59,8 @@
 % -------------------------------------------------------------
 % Headings and Footers
 % -------------------------------------------------------------
-\RequirePackage[headsepline]{scrpage2}
+%\RequirePackage[headsepline]{scrpage2}
+\RequirePackage{scrlayer-scrpage}
 \clearscrheadfoot
 \pagestyle{scrheadings}
 \automark{section}
