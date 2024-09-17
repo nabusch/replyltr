@@ -59,7 +59,8 @@
 % -------------------------------------------------------------
 % Headings and Footers
 % -------------------------------------------------------------
-\RequirePackage[headsepline]{scrpage2}
+%\RequirePackage[headsepline]{scrpage2}
+\RequirePackage{scrlayer-scrpage}
 \clearscrheadfoot
 \pagestyle{scrheadings}
 \automark{section}
@@ -71,6 +72,7 @@
 % -------------------------------------------------------------
 % New environments
 % -------------------------------------------------------------
+\newcommand{\editor}{\subsection{\noindent\textbf{Editor: }}}
 \newcommand{\reviewer}{\subsection{\noindent\textbf{Reviewer: }}}
 \newcommand{\reply}{\textbf{Reply: }}
 \newcommand{\revision}[1]{\textit{#1}}
